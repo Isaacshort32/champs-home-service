@@ -1,0 +1,49 @@
+---
+const currentYear = new Date().getFullYear();
+const currentPath = Astro.url.pathname;
+
+const navLinks = [
+  { href: '/', label: 'Home' },
+  { href: '/services', label: 'Services' },
+  { href: '/about', label: 'About' },
+  { href: '/contact', label: 'Contact' },
+];
+---
+
+<footer class="bg-forest text-warm-white py-6">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+      <!-- Business Info -->
+      <div class="flex items-center gap-4">
+        <span class="font-bold">Champs Home Service</span>
+        <span class="text-warm-white/60">|</span>
+        <span class="text-warm-white/80">Bend, Oregon</span>
+        <span class="text-warm-white/60">|</span>
+        <a href="tel:5414208350" class="text-gold font-bold hover:opacity-80 transition-opacity">
+          (541) 420-8350
+        </a>
+      </div>
+
+      <!-- Quick Links - Horizontal -->
+      <nav class="flex items-center gap-6">
+        {navLinks.map((link) => (
+          <a
+            href={link.href}
+            class:list={[
+              "hover:text-warm-white transition-colors",
+              (currentPath === link.href || (link.href !== '/' && currentPath.startsWith(link.href)))
+                ? "text-gold font-medium"
+                : "text-warm-white/80"
+            ]}
+          >
+            {link.label}
+          </a>
+        ))}
+      </nav>
+    </div>
+
+    <div class="border-t border-warm-white/20 mt-4 pt-4 text-center text-warm-white/60 text-sm">
+      <p>&copy; {currentYear} Champs Home Service. All rights reserved.</p>
+    </div>
+  </div>
+</footer>

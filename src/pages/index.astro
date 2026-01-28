@@ -1,0 +1,248 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Button from '../components/Button.astro';
+import ServiceCard from '../components/ServiceCard.astro';
+---
+
+<BaseLayout title="Home" description="Champs Home Service - Bend's trusted window cleaning experts. Professional residential and commercial window cleaning services.">
+  <!-- Hero Section -->
+  <section class="bg-warm-white py-20 md:py-28">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-forest mb-6">
+        The Difference Is Clear.
+      </h1>
+      <p class="text-xl md:text-2xl text-muted-green mb-10 max-w-2xl mx-auto">
+        Bend's trusted window cleaning experts
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <Button href="/contact" variant="primary" size="large">
+          Get a Free Quote
+        </Button>
+        <Button href="tel:5414208350" variant="secondary" size="large">
+          Call Us Today
+        </Button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Overview -->
+  <section class="py-16 md:py-20 bg-warm-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-forest text-center mb-4">
+        Our Services
+      </h2>
+      <p class="text-muted-green text-center mb-12 max-w-2xl mx-auto">
+        Professional window cleaning for homes and businesses throughout Bend and surrounding areas.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <ServiceCard
+          title="Residential"
+          description="Crystal clear windows for your home. Interior, exterior, and screen cleaning available."
+          icon="home"
+          href="/services#residential"
+        />
+        <ServiceCard
+          title="Commercial"
+          description="Professional window cleaning for businesses, storefronts, and office buildings."
+          icon="building"
+          href="/services#commercial"
+        />
+        <ServiceCard
+          title="Vacation Rentals"
+          description="Keep your rental property sparkling for guests with scheduled cleaning services."
+          icon="key"
+          href="/services#vacation-rentals"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="py-16 md:py-20 bg-forest">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-warm-white text-center mb-4">
+        What Our Customers Say
+      </h2>
+      <div class="flex justify-center items-center gap-1 mb-10">
+        <div class="flex gap-0.5">
+          <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg class="w-5 h-5" viewBox="0 0 20 20">
+            <defs><linearGradient id="partial-star"><stop offset="10%" stop-color="var(--color-gold)"/><stop offset="10%" stop-color="rgba(253,251,247,0.3)"/></linearGradient></defs>
+            <path fill="url(#partial-star)" d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+          </svg>
+        </div>
+        <p class="text-warm-white/70 text-sm ml-2">4.1 Stars on Google</p>
+      </div>
+      <div class="flex items-center gap-4 md:gap-8">
+        <button id="review-prev" class="review-nav flex-shrink-0" aria-label="Previous review">
+          <svg class="w-8 h-8 md:w-10 md:h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 19l-7-7 7-7"/></svg>
+        </button>
+        <div id="review-carousel" class="grid flex-1">
+          <div class="review-slide transition-opacity duration-500" style="opacity: 1; grid-row: 1; grid-column: 1;" data-index="0">
+            <div class="bg-warm-white/10 rounded-lg p-8 text-center">
+              <p class="text-warm-white/90 text-lg md:text-xl italic mb-6">
+                "This is the 3rd year I have used Champs Window Cleaning. They are professional, on time and my windows always look great. I strongly recommend them."
+              </p>
+              <p class="text-gold font-medium">— Cherish Wellman</p>
+              <p class="text-warm-white/50 text-sm">Google Review</p>
+            </div>
+          </div>
+          <div class="review-slide transition-opacity duration-500" style="opacity: 0; grid-row: 1; grid-column: 1;" data-index="1">
+            <div class="bg-warm-white/10 rounded-lg p-8 text-center">
+              <p class="text-warm-white/90 text-lg md:text-xl italic mb-6">
+                "Champs does a great and thorough job! We use them over and over again."
+              </p>
+              <p class="text-gold font-medium">— Alexa Scholz</p>
+              <p class="text-warm-white/50 text-sm">Google Review</p>
+            </div>
+          </div>
+          <div class="review-slide transition-opacity duration-500" style="opacity: 0; grid-row: 1; grid-column: 1;" data-index="2">
+            <div class="bg-warm-white/10 rounded-lg p-8 text-center">
+              <p class="text-warm-white/90 text-lg md:text-xl italic mb-6">
+                "Polite, on time and great prices! Will use them again and highly recommend."
+              </p>
+              <p class="text-gold font-medium">— Nona Nordstog</p>
+              <p class="text-warm-white/50 text-sm">Google Review</p>
+            </div>
+          </div>
+          <div class="review-slide transition-opacity duration-500" style="opacity: 0; grid-row: 1; grid-column: 1;" data-index="3">
+            <div class="bg-warm-white/10 rounded-lg p-8 text-center">
+              <p class="text-warm-white/90 text-lg md:text-xl italic mb-6">
+                "On time and good job cleaning windows inside and out!"
+              </p>
+              <p class="text-gold font-medium">— Chris Cercone</p>
+              <p class="text-warm-white/50 text-sm">Google Review</p>
+            </div>
+          </div>
+          <div class="review-slide transition-opacity duration-500" style="opacity: 0; grid-row: 1; grid-column: 1;" data-index="4">
+            <div class="bg-warm-white/10 rounded-lg p-8 text-center">
+              <p class="text-warm-white/90 text-lg md:text-xl italic mb-6">
+                "Great people, highly recommend!"
+              </p>
+              <p class="text-gold font-medium">— Micah Frazier</p>
+              <p class="text-warm-white/50 text-sm">Google Review</p>
+            </div>
+          </div>
+        </div>
+        <button id="review-next" class="review-nav flex-shrink-0" aria-label="Next review">
+          <svg class="w-8 h-8 md:w-10 md:h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+      <div class="flex justify-center gap-3 mt-8">
+        <button class="review-dot" data-index="0" aria-label="Review 1"></button>
+        <button class="review-dot" data-index="1" aria-label="Review 2"></button>
+        <button class="review-dot" data-index="2" aria-label="Review 3"></button>
+        <button class="review-dot" data-index="3" aria-label="Review 4"></button>
+        <button class="review-dot" data-index="4" aria-label="Review 5"></button>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .review-nav {
+      color: rgba(253, 251, 247, 0.6);
+      cursor: pointer;
+      transition: color 0.2s ease;
+      background: none;
+      border: none;
+      padding: 4px;
+    }
+    .review-nav:hover {
+      color: var(--color-gold);
+    }
+    .review-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: rgba(253, 251, 247, 0.3);
+      cursor: pointer;
+      border: none;
+      padding: 0;
+      transition: background 0.2s ease;
+    }
+    .review-dot:hover {
+      background: rgba(253, 251, 247, 0.6);
+    }
+    .review-dot.active {
+      background: var(--color-gold);
+    }
+    .review-slide {
+      pointer-events: none;
+    }
+    .review-slide.active {
+      pointer-events: auto;
+    }
+  </style>
+
+  <script>
+    const slides = document.querySelectorAll('.review-slide');
+    const dots = document.querySelectorAll('.review-dot');
+    const prevBtn = document.getElementById('review-prev');
+    const nextBtn = document.getElementById('review-next');
+    let current = 0;
+    let timer = setInterval(advance, 5000);
+
+    // Set initial state
+    slides[0].classList.add('active');
+    dots[0].classList.add('active');
+
+    function goTo(index) {
+      slides[current].style.opacity = '0';
+      slides[current].classList.remove('active');
+      dots[current].classList.remove('active');
+      current = index;
+      slides[current].style.opacity = '1';
+      slides[current].classList.add('active');
+      dots[current].classList.add('active');
+    }
+
+    function advance() {
+      goTo((current + 1) % slides.length);
+    }
+
+    function resetTimer() {
+      clearInterval(timer);
+      timer = setInterval(advance, 5000);
+    }
+
+    prevBtn.addEventListener('click', () => {
+      goTo((current - 1 + slides.length) % slides.length);
+      resetTimer();
+    });
+
+    nextBtn.addEventListener('click', () => {
+      goTo((current + 1) % slides.length);
+      resetTimer();
+    });
+
+    dots.forEach(dot => {
+      dot.addEventListener('click', () => {
+        goTo(Number(dot.dataset.index));
+        resetTimer();
+      });
+    });
+  </script>
+
+  <!-- CTA Section -->
+  <section class="py-16 md:py-20 bg-warm-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-forest mb-6">
+        Ready for Cleaner Windows?
+      </h2>
+      <p class="text-muted-green text-lg mb-8 max-w-2xl mx-auto">
+        Get a free, no-obligation quote for your home or business. We serve Bend and surrounding areas.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <Button href="/contact" variant="primary" size="large">
+          Request a Quote
+        </Button>
+        <Button href="tel:5414208350" variant="secondary" size="large">
+          (541) 420-8350
+        </Button>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
